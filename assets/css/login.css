@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    min-height: 250px;
+    align-items: flex-start;
+}
+
+.bg-element {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.logo {
+    position: relative;
+    width: 15rem;
+    z-index: 2;
+    top: 4rem;
+    right: 2rem;
+}
+
+.main {
+    padding: 0 1.6rem
+}
+
+.register {
+    font-size: 5rem;
+    color: #424242;
+    font-weight: 700;
+}
+
+.below-register-text {
+    border: none;
+    height: 3px;
+    width: 25%;
+    background: #DC4405;
+    margin: 5px 0 20px 0;
+    border-radius: 2px;
+}
