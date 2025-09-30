@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Login</title>
+  <title>Login</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <img class="bg-element" src="../images/background-layout.svg" alt="background-element">
 
-    <body>
-        <head>
-            <div class="heading">
-                <img class="bg-element" src="../images/background-layout.svg" alt="background-element">
-                <img class="logo" src="../images/swift-logo.png" alt="Logo Swift">
-            </div>
-        </head>
+    <div class="logo-container">
+      <img class="logo" src="../images/swift-logo.png" alt="Logo Swift">
+    </div>
 
-        <main class="main">
+    <main class="main">
+      <div class="form">
+        <h2 class="register">Login</h2>
+        <hr class="below-register-text">
 
-            <div>
-                <h2 class="register">Registrar</h2>
-                <hr class="below-register-text">
-            </div>
-            <div class="form">
-                <form action="#" method="post"></form>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="exemplo@email.com">
-                    </div>
-            </div>
-        </main>
-    </body>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+          </div>
+
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
